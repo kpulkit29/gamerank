@@ -91,16 +91,16 @@ class Login extends Component {
 
    <form className="login-container">
    <div className={validation.email.isInvalid && 'has-error'}><p><input type="text" name="email" placeholder="Email" onChange={this.handleInputChange}/></p>
-   <span className="help-block">{validation.email.message}</span>
+   <span className="help-block text-center" style={{margin:"auto",display:"block",color:"red"}}>{validation.email.message}</span>
    </div>
     <p><input type="text" placeholder="Address" value={this.props.web3.web3.web3Instance.eth.accounts}/></p>
     <div className={validation.password.isInvalid && 'has-error'}><p><input type="password" name="password" placeholder="password" onChange={this.handleInputChange}/></p>
-    <span className="help-block">{validation.password.message}</span>
+    <span className="help-block" style={{margin:"auto",display:"block",color:"red"}}>{validation.password.message}</span>
     </div>
     <div className={validation.password_confirmation.isInvalid && 'has-error'}><p><input type="password" name="password_confirmation" placeholder=" Confirm Password" onChange={this.handleInputChange}/></p>
-    <span className="help-block">{validation.password_confirmation.message}</span>
+    <span className="help-block" style={{margin:"auto",display:"block",color:"red"}}>{validation.password_confirmation.message}</span>
     </div>
-    <button onClick={this.handleFormSubmit} className="btn">
+    <button onClick={this.handleFormSubmit} className="btn" style={{margin:"auto",display:"block"}}>
           Sign up
         </button>
    </form>

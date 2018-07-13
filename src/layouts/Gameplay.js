@@ -13,7 +13,9 @@ class Gameplay extends Component {
       handleChange = name => event => {
         this.setState({ [name]: event.target.checked });
       };
-    
+      checkSubmission(){
+          
+      }
     render(){
         return (
           <div className="container" style={{marginTop:"10%"}}>
